@@ -23,11 +23,4 @@ public class Aluno {
 
     @Column(name = "nota_final")
     private Double notaFinal;
-
-    @OneToOne(orphanRemoval = true)
-    @JoinTable(name = "aluno_pessoa",
-            joinColumns = @JoinColumn(name = "aluno_aluno_id"),
-            inverseJoinColumns = @JoinColumn(name = "pessoa_pessoa_id"))
-    private Pessoa pessoa;
-
 }
