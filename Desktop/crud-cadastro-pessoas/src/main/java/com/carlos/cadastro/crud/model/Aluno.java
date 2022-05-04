@@ -26,8 +26,7 @@ public class Aluno {
 
     @OneToOne(orphanRemoval = true)
     @JoinTable(name = "aluno_pessoa",
-            joinColumns = @JoinColumn(name = "aluno_aluno_id"),
-            inverseJoinColumns = @JoinColumn(name = "pessoa_pessoa_id"))
+            joinColumns = @JoinColumn(name = "aluno_aluno"),
+            inverseJoinColumns = @JoinColumn(name = "pessoa_pessoa"))
     private Pessoa pessoa;
-
 }

@@ -1,7 +1,6 @@
 package com.carlos.cadastro.crud.dto;
 
 import com.carlos.cadastro.crud.model.Aluno;
-import com.carlos.cadastro.crud.model.Pessoa;
 import lombok.*;
 
 import java.time.LocalDate;
@@ -21,13 +20,6 @@ public class CadastroDto {
         private LocalDate dataCadastro;
         private LocalDate dataUltimaAlteracao;
         private LocalDate dataNascimento;
-        public Double notaFinal;
-
-        public Aluno getalunoId() {
-                return getalunoId();
-        }
-
-        public Aluno getnotaFinal() {
-                return getnotaFinal();
-        }
+        private Double notaFinal;
+        private Aluno aluno;
 }
