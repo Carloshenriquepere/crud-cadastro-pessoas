@@ -40,13 +40,4 @@ public class Pessoa {
     @OneToOne(mappedBy = "pessoa", fetch = FetchType.LAZY, cascade  = CascadeType.ALL)
     @JoinColumn(name = "aluno_id", referencedColumnName = "pessoa_id")
     private Aluno aluno;
-
-    public UUID getAlunoId() {
-        return getAlunoId();
-    }
-
-    public Double getnotaFinal() {
-        return getnotaFinal();
-    }
-
 }
